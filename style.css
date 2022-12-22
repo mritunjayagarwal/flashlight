@@ -11,6 +11,24 @@
     background-size: cover;
   }
 
+  .container{
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+.navbar a{
+    color: #fff;
+    text-decoration:none !important;
+}
+
+.navbar a:hover{
+    color: #d3d3d3;
+}
+
+.navbar-brand{
+    font-weight: 600
+}
+
   p {
     font-size: 1em;
     text-align: justify;
@@ -27,6 +45,7 @@
     display: block;
     width: 100%;
     height: 100%;
+    pointer-events:auto;
     position: absolute;
     z-index: 99;
     background: radial-gradient(
