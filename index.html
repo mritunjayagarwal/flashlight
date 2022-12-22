@@ -36,14 +36,18 @@
       adipisci sequi praesentium maiores doloremque. Nemo qui enim culpa! Ab
       voluptates rem nihil atque. Quibusdam architecto et laborum culpa dicta!
     </p>
-    <div id="player">
-      <audio autoplay hidden>
-       <source src="./music.mp3" type="audio/mpeg">
-                  If you're reading this, audio isn't supported. 
-      </audio>
-  </div>
     
+    <audio id="myAudio"></audio>
     <!--Script-->
     <script src="script.js"></script>
+    <script>
+      function playAudio(audioname){
+        let audio = new Audio(audioname);
+        // audio.loop = "true";
+        audio.play();
+      }
+
+      playAudio("music.mp3");
+    </script>
   </body>
 </html>
