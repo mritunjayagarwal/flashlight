@@ -20,7 +20,7 @@
     content: "";
     display: block;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     position: absolute;
     background: radial-gradient(
       circle 9em at var(--Xpos) var(--Ypos),
