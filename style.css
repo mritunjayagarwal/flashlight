@@ -19,6 +19,7 @@
 .navbar a{
     color: #fff;
     text-decoration:none !important;
+    margin-right: 20px;
 }
 
 .navbar a:hover{
