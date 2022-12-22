@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Stylesheet-->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -20,34 +21,36 @@
       eligendi nostrum, dicta totam cupiditate consequatur molestias laborum
       illum unde praesentium consequuntur quos culpa mollitia? Iusto delectus
       nobis totam tenetur rem. Veritatis saepe fuga nihil ipsum illum provident
-      sit asperiores totam eum.
+      sit asperiores totam eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, excepturi, similique facilis sunt repudiandae rerum aspernatur magni, neque odio in dicta corporis magnam doloribus reiciendis? Repellendus saepe assumenda sapiente quaerat!
     </p>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam placeat
-      nam impedit quis, molestiae quae maxime nisi nulla nesciunt cupiditate
-      ipsum doloremque, consequatur porro voluptatibus voluptatem distinctio,
-      perspiciatis rerum aliquam deleniti quibusdam ad odit laudantium natus
-      minima. Veritatis error facilis voluptatem nesciunt beatae, voluptas
-      totam, expedita ab, cupiditate quibusdam voluptates similique blanditiis
-      eius vero aperiam aliquam dicta labore.
-    </p>
+    <div class = "row">
+      <div class = "col-lg-4  d-flex align-items-center justify-content-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aut iusto saepe deserunt! Repudiandae tempora commodi blanditiis accusantium cupiditate dolorum dolorem quidem ipsa, quae maiores quaerat accusamus, nisi sunt quia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et dolor iure eos quasi ducimus esse consequatur id sequi porro minus, fuga quisquam error enim sapiente adipisci dignissimos praesentium aut!</p>
+      </div>
+      <div class = "col-lg-4 d-flex align-items-center justify-content-center">
+        <img src="./paradox.png" class = "img-fluid" alt="">
+      </div>
+      <div class = "col-lg-4  d-flex align-items-center justify-content-center">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste fugit laborum assumenda maiores reprehenderit eos expedita nesciunt sed, blanditiis quidem, mollitia saepe necessitatibus culpa odit tempore sit? Explicabo, quae asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et dolor iure eos quasi ducimus esse consequatur id sequi porro minus, fuga quisquam error enim sapiente adipisci dignissimos praesentium aut!</p>
+      </div>
+    </div>
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, vel
       adipisci sequi praesentium maiores doloremque. Nemo qui enim culpa! Ab
-      voluptates rem nihil atque. Quibusdam architecto et laborum culpa dicta!
+      voluptates rem nihil atque. Quibusdam architecto et laborum culpa dicta!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et dolor iure eos quasi ducimus esse consequatur id sequi porro minus, fuga quisquam error enim sapiente adipisci dignissimos praesentium aut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et dolor iure eos quasi ducimus esse consequatur id sequi porro minus, fuga quisquam error enim sapiente adipisci dignissimos praesentium aut!
     </p>
     
-    <audio id="myAudio"></audio>
-    <!--Script-->
-    <script src="script.js"></script>
     <script>
-      function playAudio(audioname){
-        let audio = new Audio(audioname);
-        // audio.loop = "true";
+      function play() {
+        var audio = document.getElementById("audio");
         audio.play();
       }
 
-      playAudio("music.mp3");
     </script>
+
+    <input type="button" value="PLAY" onclick="play()">
+    <audio id="audio" src="./music.mp3"></audio>
+    <!--Script-->
+    <script src="script.js"></script>
   </body>
 </html>
